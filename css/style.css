@@ -1,0 +1,194 @@
+
+/* -----------------------------------
+    1 - General Styles
+------------------------------------*/
+
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  margin: auto auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button_1 {
+  height: 38px;
+  background: #093009;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.dark {
+  padding: 15px;
+  background: #fff;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* -----------------------------------
+    2 - Showcase Styles
+------------------------------------*/
+
+#showcase {
+  min-height: 400px;
+  /* background:url('../img/showcase.jpg') no-repeat 0 -400px; */
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+.showcase-container {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+.showcase-container .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: opacity 2s ease-in-out;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+}
+
+.showcase-container .slide.show {
+  opacity: 1;
+}
+
+/* -----------------------------------
+    3 - General Styles
+------------------------------------*/
+
+#search {
+  padding: 5rem;
+  color: #000000;
+  background: #fff;
+}
+
+#search form {
+  text-align: center;
+}
+
+#search form input {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+#search form button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+
+/* -----------------------------------
+    4 - Info Styles
+------------------------------------*/
+
+#info {
+  text-align: center;
+  margin: 4rem;
+}
+
+/* -----------------------------------
+    5 - Form Styles
+------------------------------------*/
+
+#form {
+  padding: 5rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  color: #000000;
+  background: #fff;
+}
+
+/* -----------------------------------
+    6 - Footer Styles
+------------------------------------*/
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #000;
+  text-align: center;
+}
+
+/* -----------------------------------
+    7 - Responsivness Styles
+------------------------------------*/
+
+@media(max-width: 768px) {
+  header #branding, header nav, header nav li, #search h1, #search form, #boxes .box, article#main-col, aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+  #showcase h1 {
+    margin-top: 40px;
+  }
+  #search button, .quote button {
+    display: block;
+    width: 100%;
+  }
+  #search form input[type="email"], .quote input, .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #info {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #search {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #form {
+    padding: 5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
